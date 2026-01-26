@@ -12,10 +12,10 @@ def guess_game():
             print("Guess a higher number") # guess a higher number
 
         elif secret_num < user_input:
-            print("Lower")
+            print("Guess a lower number") # guess a lower number
 
         elif user_input == secret_num:
-            print("Correct!")  # guess a lower number
+            print("Correct!")  
             print(f"Guess is {secret_num}")
             break
 
