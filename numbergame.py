@@ -3,7 +3,7 @@ import random
 def guess_game():
     # Generates a random integer
     secret_num = random.randint(1, 200)
-    # print(secret_num)
+    print(secret_num)
 
     while True:
         user_input = int(input("Enter your guess: "))
@@ -16,6 +16,7 @@ def guess_game():
 
         elif user_input == secret_num:
             print("Correct!")  # guess a lower number
+            print(f"Guess is {secret_num}")
             break
 
 guess_game()
